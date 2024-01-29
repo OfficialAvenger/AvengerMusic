@@ -17,28 +17,28 @@ Just add <b>C</b> in The Starting Of the Commands to use then for Channel.
 """
 
 HELP_2 = """
-<b><u>𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 :</b></u>
+<b><u>AUTH USERS :</b></u>
 
-𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 𝖢𝖺𝗇 𝖴𝗌𝖾 𝖠𝖽𝗆𝗂𝗇 𝖱𝗂𝗀𝗁𝗍𝗌 𝖨𝗇 𝖳𝗁𝖾 𝖡𝗈𝗍 𝖶𝗂𝗍𝗁𝗈𝗎𝗍 𝖠𝖽𝗆𝗂𝗇 𝖱𝗂𝗀𝗁𝗍𝗌 𝖨𝗇 𝖳𝗁𝖾 𝖢𝗁𝖺𝗍 .
+Auth Users Can Use Admin Rights in the Bot Without Admin Right in The Chat.
 
-/auth [ 𝖴𝗌𝖾𝗋 𝖨𝖣 / 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 ] : 𝖠𝖽𝖽 𝖠 𝖴𝗌𝖾𝗋 𝖳𝗈 𝖠𝗎𝗍𝗁 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
-/unauth [ 𝖴𝗌𝖾𝗋 𝖨𝖣 / 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 ] : 𝖱𝖾𝗆𝗈𝗏𝖾𝖽 𝖠 𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 𝖥𝗋𝗈𝗆 𝖳𝗁𝖾 𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 𝖫𝗂𝗌𝗍 .
-/authusers : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖠𝗎𝗍𝗁 𝖴𝗌𝖾𝗋𝗌 𝖮𝖿 𝖳𝗁𝖾 𝖦𝗋𝗈𝗎𝗉 .
+<b>/auth [User id / Username] :</b> Add A User to Auth list of the Bot.
+<b>/unauth [User id / Username] :</b> Remove A Auth User from the Auth Users list.
+<b>/authusers :</b> Shows the list of Auth Users of the Group.
 """
 
 HELP_3 = """
-<u><b>𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖥𝖾𝖺𝗍𝗎𝗋𝖾</b></u> [ 𝖮𝗇𝗅𝗒 𝖥𝗈𝗋 𝖲𝗎𝖽𝗈𝖾𝗋𝗌 ] :
+<u><b>BROADCAST FEATURE</b></u> [ Only for Owner and Sudo User ] :
 
-/broadcast [ 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖮𝗋 𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 ] : 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖠 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖳𝗈 𝖲𝖾𝗋𝗏𝖾𝖽 𝖢𝗁𝖺𝗍𝗌 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
+<b>/broadcast [Message or Reply to a Message] :</b> Broadcast A Message to Served Chats of the Bot.
 
-<u>𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝗂𝗇𝗀 𝖬𝗈𝖽𝖾𝗌 :</u>
-<b>-pin</b> : 𝖯𝗂𝗇𝗌 𝖸𝗈𝗎𝗋 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝖾𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾𝗌 𝖨𝗇 𝖲𝖾𝗋𝗏𝖾𝖽 𝖢𝗁𝖺𝗍𝗌 .
-<b>-pinloud</b> : 𝖯𝗂𝗇𝗌 𝖸𝗈𝗎𝗋 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝖾𝖽 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖨𝗇 𝖲𝖾𝗋𝗏𝖾𝖽 𝖢𝗁𝖺𝗍𝗌 𝖠𝗇𝖽 𝖲𝖾𝗇𝖽 𝖭𝗈𝗍𝗂𝖿𝗂𝖼𝖺𝗍𝗂𝗈𝗇 𝖳𝗈 𝖳𝗁𝖾 𝖬𝖾𝗆𝖻𝖾𝗋𝗌 .
-<b>-user</b> : 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍𝗌 𝖳𝗁𝖾 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖳𝗈 𝖳𝗁𝖾 𝖴𝗌𝖾𝗋𝗌 𝖶𝗁𝗈 𝖧𝖺𝗏𝖾 𝖲𝗍𝖺𝗋𝗍𝖾𝖽 𝖸𝗈𝗎𝗋 𝖡𝗈𝗍 .
-<b>-assistant</b> : 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖸𝗈𝗎𝗋 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖥𝗋𝗈𝗆 𝖳𝗁𝖾 𝖠𝗌𝗌𝗂𝗌𝗍𝖺𝗇𝗍 𝖠𝖼𝖼𝗈𝗎𝗇𝗍 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
-<b>-nobot</b> : 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 𝖸𝗈𝗎𝗋 𝖬𝖾𝗌𝗌𝖺𝗀𝖾 𝖥𝗋𝗈𝗆 𝖳𝗁𝖾 𝖠𝗌𝗌𝗂𝗌𝗍𝖺𝗇𝗍 𝖠𝖼𝖼𝗈𝗎𝗇𝗍 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
+<u>BROADCASTING MODES :</u>
+<b>-pin</b> : Pin Your Broadcast Messages in Served Chats.
+<b>-pinloud</b> : Pins Your Broadcasted Message In Served Chats and Send Notification to the Members.
+<b>-user</b> : Broadcasts the Messages to the Users Who have Started your Bot.
+<b>-assistant</b> : Broadcast Your Message from the Assistant Account of the Bot.
+<b>-nobot</b> : Broadcast your Message from the assistant Account of the Bot.
 
-<b>𝖤𝗑𝖺𝗆𝗉𝗅𝖾 :</b> <code>/broadcast -user -assistant -pin 𝖳𝖾𝗌𝗍𝗂𝗇𝗀 𝖡𝗋𝗈𝖺𝖽𝖼𝖺𝗌𝗍 .</code>
+<b>Example:</b> <code>/broadcast -user -assistant -pin Testing Broadcast.</code>
 """
 
 HELP_4 = """<u><b>𝖢𝗁𝖺𝗍 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍 𝖥𝖾𝖺𝗍𝗎𝗋𝖾 :</b></u> [ 𝖮𝗇𝗅𝗒 𝖥𝗈𝗋 𝖲𝗎𝖽𝗈𝖾𝗋𝗌 ]
