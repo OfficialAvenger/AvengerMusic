@@ -41,23 +41,23 @@ HELP_3 = """
 <b>Example:</b> <code>/broadcast -user -assistant -pin Testing Broadcast.</code>
 """
 
-HELP_4 = """<u><b>𝖢𝗁𝖺𝗍 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍 𝖥𝖾𝖺𝗍𝗎𝗋𝖾 :</b></u> [ 𝖮𝗇𝗅𝗒 𝖥𝗈𝗋 𝖲𝗎𝖽𝗈𝖾𝗋𝗌 ]
+HELP_4 = """<u><b>BLACKLIST CHAT :</b></u> [Only for Sudo]
 
-𝖱𝖾𝗌𝗍𝗋𝗂𝖼𝗍 𝖲𝗁𝗂𝗍 𝖢𝗁𝖺𝗍𝗌 𝖳𝗈 𝖴𝗎𝖾 𝖮𝗎𝗋 𝖯𝗋𝖾𝖼𝗂𝗈𝗎𝗌 𝖡𝗈𝗍 .
+Restrict Shit Chats to use Our Precious Bot.
 
-/blacklistchat [ 𝖢𝗁𝖺𝗍 𝖨𝖣 ] : 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍 𝖠 𝖢𝗁𝖺𝗍 𝖥𝗋𝗈𝗆 𝖴𝗌𝗂𝗇𝗀 𝖳𝗁𝖾 𝖡𝗈𝗍 .
-/whitelistchat [ 𝖢𝗁𝖺𝗍 𝖨𝖣 ] : 𝖶𝗁𝗂𝗍𝖾𝗅𝗂𝗌𝗍 𝖳𝗁𝖾 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍𝖾𝖽 𝖢𝗁𝖺𝗍 .
-/blacklistedchat : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍𝖾𝖽 𝖢𝗁𝖺𝗍𝗌 .
+<b>/blacklistchat [Chat id] :</b> Blacklist A Chat From using this Bot.
+<b>/whitelistchat [Chat id] :</b> Whitelist the Blacklisted Chat.
+<b>/blacklistedchat :</b> Shows The List of Blacklisted Chat.
 """
 
 HELP_5 = """
-<u><b>𝖡𝗅𝗈𝖼𝗄 𝖴𝗌𝖾𝗋𝗌 :</b></u> [ 𝖮𝗇𝗅𝗒 𝖥𝗈𝗋 𝖲𝗎𝖽𝗈𝖾𝗋𝗌 ]
+<u><b>BLOCK USERS :</b></u> [Only for Sudo]
 
-𝖲𝗍𝖺𝗋𝗍𝗌 𝖨𝗀𝗇𝗈𝗋𝗂𝗇𝗀 𝖳𝗁𝖾 𝖡𝗅𝖺𝖼𝗄𝗅𝗂𝗌𝗍𝖾𝖽 𝖴𝗌𝖾𝗋 , 𝖲𝗈 𝖳𝗁𝖺𝗍 𝖧𝖾 𝖢𝖺𝗇'𝗍 𝖴𝗌𝖾 𝖡𝗈𝗍 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 .
+Starts Ignoring the Blacklisted User, So that He Can't use Bot Commands.
 
-/block [ 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 𝖮𝗋 𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖴𝗌𝖾𝗋 ] : 𝖡𝗅𝗈𝖼𝗄 𝖳𝗁𝖾 𝖴𝗌𝖾𝗋 𝖥𝗋𝗈𝗆 𝖮𝗎𝗋 𝖡𝗈𝗍 .
-/unblock [ 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 𝖮𝗋 𝖱𝖾𝗉𝗅𝗒 𝖳𝗈 𝖠 𝖴𝗌𝖾𝗋 ] : 𝖴𝗇-𝖡𝗅𝗈𝖼𝗄𝗌 𝖳𝗁𝖾 𝖡𝗅𝗈𝖼𝗄𝖾𝖽-𝖴𝗌𝖾𝗋 .
-/blockedusers : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖫𝗂𝗌𝗍 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗅𝗈𝖼𝗄𝖾𝖽 𝖴𝗌𝖾𝗋𝗌 .
+<b>/block [Username or Reply to A User] :</b> Block the User from our Bot.
+<b>/unblock [Username or Reply to A User] :</b> Un-Block the Blocked User.
+<b>/blockedusers :</b> Shows the List of the Blocked Users.
 """
 
 HELP_6 = """
