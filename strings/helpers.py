@@ -61,15 +61,15 @@ Starts Ignoring the Blacklisted User, So that He Can't use Bot Commands.
 """
 
 HELP_6 = """
-<u><b>𝖢𝗁𝖺𝗇𝗇𝖾𝗅 𝖯𝗅𝖺𝗒 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :</b></u>
+<u><b>CHANNEL PLAY COMMANDS :</b></u>
 
-𝖸𝗈𝗎 𝖢𝖺𝗇 𝖲𝗍𝗋𝖾𝖺𝗆 𝖠𝗎𝖽𝗂𝗈 / 𝖵𝗂𝖽𝖾𝗈 𝖨𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅 .
+You Can Stream Audio / Video in Channel.
 
-/cplay : 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗁𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖠𝗎𝖽𝗂𝗈 𝖳𝗋𝖺𝖼𝗄 𝖮𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅'𝗌 𝖵𝗂𝖽𝖾𝗈𝖢𝗁𝖺𝗍 .
-/cvplay : 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗁𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖵𝗂𝖽𝖾𝗈 𝖳𝗋𝖺𝖼𝗄 𝖮𝗇 𝖢𝗁𝖺𝗇𝗇𝖾𝗅'𝗌 𝖵𝗂𝖽𝖾𝗈𝖢𝗁𝖺𝗍 .
-/cplayforce 𝖮𝗋 /cvplayforce : 𝖲𝗍𝗈𝗉𝗌 𝖳𝗁𝖾 𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖲𝗍𝗋𝖾𝖺𝗆 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗁𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖳𝗋𝖺𝖼𝗄 .
+<b>/cplay :</b> Starts Streaming the Requested Audio track on Channel.
+<b>/cvplay :</b> Starts Streaming the Requested Video track on Channel.
+<b>/cplayforce or /cvplayforce :</b> Stop the Ongoing Stream and Starts Streaming the Requested Track.
 
-/channelplay [ 𝖢𝗁𝖺𝗍 𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 𝖮𝗋 𝖨𝖣 ] 𝖮𝗋 [ 𝖣𝗂𝗌𝖺𝖻𝗅𝖾 ] : 𝖢𝗈𝗇𝗇𝖾𝖼𝗍 𝖳𝗈 𝖠 𝖦𝗋𝗈𝗎𝗉 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗋𝖺𝖼𝗄𝗌 𝖡𝗒 𝖳𝗁𝖾 𝖧𝖾𝗅𝗉 𝖮𝖿 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 𝖲𝖾𝗇𝗍 𝖨𝗇 𝖦𝗋𝗈𝗎𝗉 .
+<b>/channelplay [Chat Username or Id] or [Disable] : Connect to A Group And Starts Streaming Tracks by the Help Commands sent in Group.
 """
 
 HELP_7 = """
