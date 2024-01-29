@@ -90,42 +90,42 @@ HELP_8 = """
 """
 
 HELP_9 = """
-<u><b>𝖬𝖺𝗂𝗇𝗍𝖾𝗇𝖺𝗇𝖼𝖾 𝖬𝗈𝖽𝖾</b></u> [ 𝖮𝗇𝗅𝗒 𝖥𝗈𝗋 𝖲𝗎𝖽𝗈𝖾𝗋𝗌 ] :
+<u><b>MAINTENANCE MODE</b></u> [Only for Sudo] :
 
-/logs : 𝖦𝖾𝗍 𝖫𝗈𝗀𝗌 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
+<b>/logs :</b> Get Logs of the Bot.
 
-/logger [ Enable / Disable ] : Bot Will Start Logging The Activities Happen On Bot .
+<b>/logger [Enable / Disable] :</b> Bot Will Start Logging The Activities Happen On Bot .
 
-/maintenance [ 𝖤𝗇𝖺𝖻𝗅𝖾 / 𝖣𝗂𝗌𝖺𝖻𝗅𝖾 ] : 𝖤𝗇𝖺𝖻𝗅𝖾 𝖮𝗋 𝖣𝗂𝗌𝖺𝖻𝗅𝖾 𝖳𝗁𝖾 𝖬𝖺𝗂𝗇𝗍𝖾𝗇𝖺𝗇𝖼𝖾 𝖬𝗈𝖽𝖾 𝖮𝖿 𝖸𝗈𝗎𝗋 𝖡𝗈𝗍 .
+<b>/maintenance [Enable / Disable] :</b> Enable or Disable the Maintenance Mode of your Bot.
 """
 
 HELP_10 = """
-<b><u>𝖯𝗂𝗇𝗀 𝖠𝗇𝖽 𝖲𝗍𝖺𝗍𝗌 :</b></u>
+<b><u>PING & STATS :</b></u>
 
-/start : 𝖲𝗍𝖺𝗋𝗍 𝖳𝗁𝖾 𝖬𝗎𝗌𝗂𝖼 𝖡𝗈𝗍 .
-/help : 𝖦𝖾𝗍 𝖧𝖾𝗅𝗉 𝖬𝖾𝗇𝗎 𝖶𝗂𝗍𝗁 𝖤𝗑𝗉𝗅𝖺𝗇𝖺𝗍𝗂𝗈𝗇 𝖮𝖿 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 .
+<b>/start :</b> Start the Music Bot.
+<b>/help :</b> Get Help Menu With Explanation of Commands.
 
-/ping : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖯𝗂𝗇𝗀 𝖠𝗇𝖽 𝖲𝗒𝗌𝗍𝖾𝗆 𝖲𝗍𝖺𝗍𝗌 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
+<b>/ping :</b> Shows the Ping and System Stats of the Bot.
 
-/stats : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖮𝗏𝖾𝗋𝖺𝗅𝗅 𝖲𝗍𝖺𝗍𝗌 𝖮𝖿 𝖳𝗁𝖾 𝖡𝗈𝗍 .
+<b>/stats :</b> Shows the Overall Stats of the Bot.
 """
 
 HELP_11 = """
-<u><b>𝖯𝗅𝖺𝗒 𝖢𝗈𝗆𝗆𝖺𝗇𝖽𝗌 :</b></u>
+<u><b>PLAY COMMANDS :</b></u>
 
-<b>v :</b> 𝖲𝗍𝖺𝗇𝖽𝗌 𝖥𝗈𝗋 𝖵𝗂𝖽𝖾𝗈 𝖯𝗅𝖺𝗒 .
-<b>force :</b> 𝖲𝗍𝖺𝗇𝖽𝗌 𝖥𝗈𝗋 𝖥𝗈𝗋𝖼𝖾 𝖯𝗅𝖺𝗒 .
+<b>v :</b> Stand for Video Play.
+<b>force :</b> Stands for Force Play.
 
-/play 𝖮𝗋 /vplay : 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗁𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖳𝗋𝖺𝖼𝗄 𝖮𝗇 𝖵𝗂𝖽𝖾𝗈𝖢𝗁𝖺𝗍 .
+<b>/play or /vplay :</b> Starts Streaming the Requested Track on VideoChat.
 
-/playforce 𝖮𝗋 /vplayforce : 𝖲𝗍𝗈𝗉𝗌 𝖳𝗁𝖾 𝖮𝗇𝗀𝗈𝗂𝗇𝗀 𝖲𝗍𝗋𝖾𝖺𝗆 𝖠𝗇𝖽 𝖲𝗍𝖺𝗋𝗍𝗌 𝖲𝗍𝗋𝖾𝖺𝗆𝗂𝗇𝗀 𝖳𝗁𝖾 𝖱𝖾𝗊𝗎𝖾𝗌𝗍𝖾𝖽 𝖳𝗋𝖺𝖼𝗄 .
+<b>/playforce or /vplayforce :</b> Stops the Ongoing Stream andStarts Streaming the Requested Track.
 """
 
 HELP_12 = """
-<b><u>𝖲𝗁𝗎𝖿𝖿𝗅𝖾 𝖰𝗎𝖾𝗎𝖾 :</b></u>
+<b><u>SHUFFLE QUEUE :</b></u>
 
-/shuffle : 𝖲𝗁𝗎𝖿𝖿𝗅𝖾'𝗌 𝖳𝗁𝖾 𝖰𝗎𝖾𝗎𝖾 .
-/queue : 𝖲𝗁𝗈𝗐𝗌 𝖳𝗁𝖾 𝖲𝗁𝗎𝖿𝖿𝗅𝖾'𝗌 𝖰𝗎𝖾𝗎𝖾 .
+<b>/shuffle :</b> Shuffle's the Queue.
+<b>/queue :</b> Shows the Shuffle's Queue.
 """
 
 HELP_13 = """
