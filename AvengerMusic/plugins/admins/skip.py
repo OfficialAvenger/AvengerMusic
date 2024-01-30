@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from AvengerMusic import YouTube, app
-from AvengerMusic.core.call import Inflex
+from AvengerMusic.core.call import Avenger
 from AvengerMusic.misc import db
 from AvengerMusic.utils.database import get_loop
 from AvengerMusic.utils.decorators import AdminRightsCheck
@@ -48,7 +48,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await Inflex.stop_stream(chat_id)
+                                    await Avenger.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -86,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await Inflex.stop_stream(chat_id)
+                return await Avenger.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -144,7 +144,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await Inflex.skip_stream(chat_id, file_path, video=status, image=image)
+            await Avenger.skip_stream(chat_id, file_path, video=status, image=image)
         except:
             return await mystic.edit_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -164,7 +164,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await Inflex.skip_stream(chat_id, videoid, video=status)
+            await Avenger.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -186,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await Inflex.skip_stream(chat_id, queued, video=status, image=image)
+            await Avenger.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
