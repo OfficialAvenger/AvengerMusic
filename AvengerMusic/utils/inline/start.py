@@ -1,6 +1,5 @@
 from pyrogram.types import InlineKeyboardButton, CallbackQuery
 from pyrogram import Client, filters
-from pyrogram import InlineKeyboardMarkup
 
 import config
 from AvengerMusic import app
