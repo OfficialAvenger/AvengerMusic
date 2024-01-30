@@ -19,7 +19,7 @@ from AvengerMusic.utils.database import (
     remove_active_video_chat,
 )
 from AvengerMusic.utils.decorators.language import language
-from AvengerMusic.utils.pastebin import InflexBin
+from AvengerMusic.utils.pastebin import AvengerBin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
@@ -69,7 +69,7 @@ async def update_(client, message, _):
     _update_response_ = "<b>A New Update is Available For the Bot!</b>\n\n➣ Pushing Updates Now\n\n<b><u>Updates :</u></b>\n\n"
     _final_updates_ = _update_response_ + updates
     if len(_final_updates_) > 4096:
-        url = await InflexBin(updates)
+        url = await AvengerBin(updates)
         nrs = await response.edit(
             f"<b>A New Update is Available For the Bot!</b>\n\n➣ Pushing Updates Now\n\n<u><b>Updates :</b></u>\n\n<a href={url}>Check Updates</a>"
         )
