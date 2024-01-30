@@ -1,4 +1,5 @@
 from typing import Union
+import random
 
 from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
@@ -10,6 +11,7 @@ from AvengerMusic.utils.decorators.language import LanguageStart, languageCB
 from AvengerMusic.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_GROUP
 from strings import get_string, helpers
+from config import START_IMG_URL
 
 
 @app.on_message(filters.command(["help"]) & filters.private & ~BANNED_USERS)
@@ -39,7 +41,7 @@ async def helper_private(
         _ = get_string(language)
         keyboard = help_pannel(_)
         await update.reply_photo(
-            photo=START_IMG_URL,
+            photo=random.choice(START_IMG_URL),
             caption=_["help_1"].format(SUPPORT_GROUP),
             reply_markup=keyboard,
         )
