@@ -38,7 +38,7 @@ def private_panel(_):
     return buttons
 
 
-@app.on_callback_query(filters.callback_query("alert_message"))
+@app.on_CallbackQuery(filters.callback_query("alert_message"))
 def alert_message_func(_, query: CallbackQuery):
     query.answer("Comming soon 🔜", show_alert=True)
 
