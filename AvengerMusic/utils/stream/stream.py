@@ -6,7 +6,7 @@ from pyrogram.types import InlineKeyboardMarkup
 
 import config
 from AvengerMusic import Carbon, YouTube, app
-from AvengerMusic.core.call import Inflex
+from AvengerMusic.core.call import Avenger
 from AvengerMusic.misc import db
 from AvengerMusic.utils.database import add_active_video_chat, is_active_chat
 from AvengerMusic.utils.exceptions import AssistantErr
@@ -32,7 +32,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await Inflex.force_stop_stream(chat_id)
+        await Avenger.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -82,7 +82,7 @@ async def stream(
                     )
                 except:
                     raise AssistantErr(_["play_14"])
-                await Inflex.join_call(
+                await Avenger.join_call(
                     chat_id,
                     original_chat_id,
                     file_path,
@@ -119,7 +119,7 @@ async def stream(
         if count == 0:
             return
         else:
-            link = await InflexBin(msg)
+            link = await AvengerBin(msg)
             lines = msg.count("\n")
             if lines >= 17:
                 car = os.linesep.join(msg.split(os.linesep)[:17])
@@ -171,7 +171,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Inflex.join_call(
+            await Avenger.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -234,7 +234,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Inflex.join_call(chat_id, original_chat_id, file_path, video=None)
+            await Avenger.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -289,7 +289,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Inflex.join_call(chat_id, original_chat_id, file_path, video=status)
+            await Avenger.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -348,7 +348,7 @@ async def stream(
             n, file_path = await YouTube.video(link)
             if n == 0:
                 raise AssistantErr(_["str_3"])
-            await Inflex.join_call(
+            await Avenger.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -384,7 +384,7 @@ async def stream(
             db[chat_id][0]["markup"] = "tg"
     elif streamtype == "index":
         link = result
-        title = "ɪɴᴅᴇx ᴏʀ ᴍ3ᴜ8 ʟɪɴᴋ"
+        title = "Index or M3U8 Link"
         duration_min = "00:00"
         if await is_active_chat(chat_id):
             check = db.get(chat_id) 
@@ -409,7 +409,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await Inflex.join_call(
+            await Avenger.join_call(
                 chat_id,
                 original_chat_id,
                 link,
