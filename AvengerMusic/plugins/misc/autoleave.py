@@ -5,14 +5,14 @@ from pyrogram.enums import ChatType
 
 import config
 from AvengerMusic import app
-from AvengerMusic.core.call import Inflex, autoend
+from AvengerMusic.core.call import Avenger, autoend
 from AvengerMusic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from InflexMusic.core.userbot import assistants
+            from AvengerMusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -59,7 +59,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await Inflex.stop_stream(chat_id)
+                    await Avenger.stop_stream(chat_id)
                 except:
                     continue
                 try:
