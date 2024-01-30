@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from AvengerMusic import LOGGER, app, userbot
-from AvengerMusic.core.call import Inflex
+from AvengerMusic.core.call import Avenger
 from AvengerMusic.misc import sudo
 from AvengerMusic.plugins import ALL_MODULES
 from AvengerMusic.utils.database import get_banned_users, get_gbanned
@@ -38,9 +38,9 @@ async def init():
         importlib.import_module("AvengerMusic.plugins" + all_module)
     LOGGER("AvengerMusic.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await Inflex.start()
+    await Avenger.start()
     try:
-        await Inflex.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
+        await Avenger.stream_call("https://te.legra.ph/file/29f784eb49d230ab62e9e.mp4")
     except NoActiveGroupCall:
         LOGGER("AvengerMusic").error(
             "Please turn on the videochat of your log group\channel.\n\nStopping Bot..."
@@ -48,7 +48,7 @@ async def init():
         exit()
     except:
         pass
-    await Inflex.decorators()
+    await Avenger.decorators()
     LOGGER("AvengerMusic").info(
         "Avenger Music Bot Started Successfully"
     )
