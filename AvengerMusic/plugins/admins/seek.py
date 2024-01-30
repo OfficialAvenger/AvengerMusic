@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from AvengerMusic import YouTube, app
-from AvengerMusic.core.call import Inflex
+from AvengerMusic.core.call import Avenger
 from AvengerMusic.misc import db
 from AvengerMusic.utils import AdminRightsCheck, seconds_to_min
 from AvengerMusic.utils.inline import close_markup
@@ -56,7 +56,7 @@ async def seek_comm(cli, message: Message, _, chat_id):
     if "index_" in file_path:
         file_path = playing[0]["vidid"]
     try:
-        await Inflex.seek_stream(
+        await Avenger.seek_stream(
             chat_id,
             file_path,
             seconds_to_min(to_seek),
