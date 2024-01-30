@@ -1,4 +1,6 @@
-from pyrogram.types import InlineKeyboardButton
+from pyrogram.types import InlineKeyboardButton, CallbackQuery
+from pyrogram import Client, filters
+from pyrogram import InlineKeyboardMarkup
 
 import config
 from AvengerMusic import app
@@ -31,6 +33,15 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
+            InlineKeyboardButton(text="Premium", callback_data="alert_message"),
         ],
     ]
     return buttons
+
+
+@app.on_callback_query(filters.callback_query("alert_message"))
+def alert_message_func(_, query: CallbackQuery):
+    query.answer("Comming soon 🔜", show_alert=True)
+
+
+# You can add more code to start the Pyrogram client and handle other functionalities.
