@@ -4,7 +4,7 @@ from pyrogram import filters, types
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 from AvengerMusic import app
-from AvengerMusic.utils import help_pannel
+from AvengerMusic.utils.inline.help import help_pannel
 from AvengerMusic.utils.database import get_lang
 from AvengerMusic.utils.decorators.language import LanguageStart, languageCB
 from AvengerMusic.utils.inline.help import help_back_markup, private_help_panel
