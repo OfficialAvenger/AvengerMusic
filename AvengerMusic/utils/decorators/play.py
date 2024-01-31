@@ -24,6 +24,10 @@ from AvengerMusic.utils.inline import botplaylist_markup
 from config import PLAYLIST_IMG_URL, SUPPORT_GROUP, adminlist
 from strings import get_string
 
+support_button = InlineKeyboardButton("Contact Support", url="https://t.me/Red_Wine_Op")
+
+reply_markup = InlineKeyboardMarkup([[support_button]])
+
 links = {}
 
 
@@ -127,7 +131,8 @@ def PlayWrapper(command):
                     return await message.reply_text(
                         _["call_2"].format(
                             app.mention, userbot.id, userbot.name, userbot.username
-                        )
+                        ),
+                        reply_markup=reply_markup,
                     )
             except UserNotParticipant:
                 if chat_id in links:
