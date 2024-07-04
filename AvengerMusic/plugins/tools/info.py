@@ -44,7 +44,6 @@ async def uid(client, message):
 )
 async def get_gifid(_, m: Message):
     if m.reply_to_message and m.reply_to_message.animation:
-        LOGGER.info(f"{m.from_user.id} used gifid cmd in {m.chat.id}")
         await m.reply_text(
             f"<b>Gif ID :</b>\n<code>{m.reply_to_message.animation.file_id}</code>",
             parse_mode=enums.ParseMode.HTML,
