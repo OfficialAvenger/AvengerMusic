@@ -10,7 +10,7 @@ async def uid(client, message):
     message_id = message.id
     reply = message.reply_to_message
 
-    text = f"Your ID is `{your_id}`\n\n"
+    text = f"Your ID is <code>{your_id}</code>\n\n"
 
     if not message.command:
         message.command = message.text.split()
@@ -20,20 +20,19 @@ async def uid(client, message):
             split = message.text.split(None, 1)[1].strip()
             user_id = (await client.get_users(split)).id
             user_mention = (await client.get_users(split)).mention 
-            text += f"User {user_mention}'s ID is `{user_id}`\n"
+            text += f"User {user_mention}'s ID is <code>{user_id}</code>\n"
 
         except Exception:
             return await message.reply_text("No User Found")
 
-    text += f"\nChat ID is `{chat.id}`\n\n"
 
     if not getattr(reply, "empty", True) and not message.forward_from_chat and not reply.sender_chat:
-        text += f"Replied User ID » `{reply.from_user.id}`\n\n"
+        text += f"Replied User ID » <code>{reply.from_user.id}</code>\n\n"
 
     if reply and reply.forward_from_chat:
-        text += f"The Forwarded Channel, {reply.forward_from_chat.title}, Has an ID of: `{reply.forward_from_chat.id}`\n\n"        
+        text += f"The Forwarded Channel, {reply.forward_from_chat.title}, Has an ID of: <code>{reply.forward_from_chat.id}</code>\n\n"        
     
     if reply and reply.sender_chat:
-        text += f"The ID of Replied Chat/Channel: `{reply.sender_chat.id}`"
+        text += f"The ID of Replied Chat/Channel: <code>{reply.sender_chat.id}</code>"
         
     await message.reply(text)
