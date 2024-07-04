@@ -1,6 +1,6 @@
 pyrogram import filters 
 from pyrogram.types import Message
-
+from AvengerMusic import app
 
 @app.on_message(filters.command("id"), group=10)
 async def uid(client, message):
