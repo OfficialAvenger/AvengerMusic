@@ -10,7 +10,7 @@ async def uid(client, message):
     message_id = message.id
     reply = message.reply_to_message
 
-    text = f"User **{mention_user}**'s ID is `{your_id}`\n"
+    text = f"Your ID is `{your_id}`\n\n"
 
     if not message.command:
         message.command = message.text.split()
@@ -20,15 +20,15 @@ async def uid(client, message):
             split = message.text.split(None, 1)[1].strip()
             user_id = (await client.get_users(split)).id
             user_mention = (await client.get_users(split)).mention 
-            text += f"**[{user_mention}](tg://user?id={user_id})** » `{user_id}`\n"
+            text += f"User {user_mention}'s ID is `{user_id}`\n"
 
         except Exception:
-            return await message.reply_text("**No User Found**")
+            return await message.reply_text("No User Found")
 
-    text += f"\n**[Chat ID](https://t.me/{chat.username})** `{chat.id}`\n\n"
+    text += f"\nChat ID is `{chat.id}`\n\n"
 
     if not getattr(reply, "empty", True) and not message.forward_from_chat and not reply.sender_chat:
-        text += f"**[Replied User ID](tg://user?id={reply.from_user.id})** » `{reply.from_user.id}`\n\n"
+        text += f"Replied User ID » `{reply.from_user.id}`\n\n"
 
     if reply and reply.forward_from_chat:
         text += f"The Forwarded Channel, {reply.forward_from_chat.title}, Has an ID of: `{reply.forward_from_chat.id}`\n\n"        
