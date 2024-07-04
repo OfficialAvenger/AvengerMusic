@@ -62,7 +62,7 @@ async def stickerid(client, message):
         sticker_id = message.reply_to_message.sticker.file_id
         await message.reply_text(
             f"<b>The sticker ID is:</b>\n <code>{sticker_id}</code>",
-            parss_mode=enums.ParseMode.HTML,
+            parse_mode=enums.ParseMode.HTML,
         )
     else:
         await message.reply_text("Please reply to a sticker to get its ID.")
