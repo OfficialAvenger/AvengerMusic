@@ -144,3 +144,34 @@ async def greet_group(_, member: ChatMemberUpdated):
         os.remove(f"downloads/pp{user.id}.png")
     except Exception as e:
         pass
+
+
+
+from pyrogram import Client, filters
+from pyrogram.types import ChatMemberUpdated, InlineKeyboardMarkup, InlineKeyboardButton
+
+# Assuming 'app' is your Pyrogram Client instance
+
+@app.on_chat_member_updated(filters.group)
+async def member_has_left(client: Client, member: ChatMemberUpdated):
+
+    if (
+        not member.new_chat_member
+        and member.old_chat_member.status not in {"banned", "left", "restricted"}
+        and member.old_chat_member
+    ):
+        user = member.old_chat_member.user
+        caption = (
+            f"<b>Sad to see you living {user.mention}</b>"
+        )
+        deep_link = f"https://t.me/AvengerNews"
+        button_text = "UPDATES"
+
+        # Send the message with only text and a button
+        await client.send_message(
+            chat_id=member.chat.id,
+            text=caption,
+            reply_markup=InlineKeyboardMarkup([
+                [InlineKeyboardButton(button_text, url=deep_link)]
+            ])
+        )
