@@ -121,14 +121,14 @@ async def greet_group(_, member: ChatMemberUpdated):
             member.chat.id,
             photo=welcomeimg,
             caption= f"""
-**WELCOME TO {member.chat.title}**
+<b>WELCOME TO {member.chat.title}</b>
 
-**Name :** {user.mention}
-**ID :** {user.id}
-**Username :** @{user.username}
+<b>Name :*</b> {user.mention}
+<b>ID :</b> {user.id}
+<b>Username :</b> @{user.username}
 
-**Join Date :** {joined_date}
-**Join Time :** {Joined_time}
+<b>Join Date :</b> {joined_date}
+<b>Join Time :</b> {Joined_time}
 ➖➖➖➖➖➖➖➖➖➖➖➖➖
 """,
             reply_markup=InlineKeyboardMarkup([
