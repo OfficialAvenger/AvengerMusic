@@ -3,11 +3,13 @@ aiohttp
 asyncio
 async_pymongo
 beautifulsoup4
+bs4
 dnspython
 ffmpeg-python
 gitpython
 hachoir
 heroku3
+httpx==0.27.0
 motor
 pillow==9.5.0
 psutil
