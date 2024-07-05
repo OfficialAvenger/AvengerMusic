@@ -1,6 +1,7 @@
 aiofiles
 aiohttp
 asyncio
+async_pymongo
 beautifulsoup4
 dnspython
 ffmpeg-python
@@ -15,6 +16,7 @@ pykeyboard
 pyrogram==2.0.106
 python-dotenv
 pyyaml
+pytz
 requests
 speedtest-cli
 spotipy
