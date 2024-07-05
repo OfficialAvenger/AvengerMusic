@@ -162,7 +162,7 @@ async def member_has_left(client: Client, member: ChatMemberUpdated):
     ):
         user = member.old_chat_member.user
         caption = (
-            f"<b>Sad to see you living {user.mention}</b>"
+            f"<b>Sad to see you leaving {user.mention}</b>"
         )
         deep_link = f"https://t.me/AvengerNews"
         button_text = "UPDATES"
