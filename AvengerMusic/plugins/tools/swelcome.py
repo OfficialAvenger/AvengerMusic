@@ -123,7 +123,7 @@ async def greet_group(_, member: ChatMemberUpdated):
             caption= f"""
 <b>WELCOME TO {member.chat.title}</b>
 
-<b>Name :*</b> {user.mention}
+<b>Name :</b> {user.mention}
 <b>ID :</b> {user.id}
 <b>Username :</b> @{user.username}
 
