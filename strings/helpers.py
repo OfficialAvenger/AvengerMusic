@@ -132,7 +132,7 @@ HELP_13 = """
 <b><u>SEEK STREAM :</b></u>
 
 <b>/seek [Duration in Seconds] :</b> Seek the Stream to The Given Duration.
-<b>/seekback [Duration in Seconds] : Backward Seek the Stream to The Given Duration.
+<b>/seekback [Duration in Seconds] :</b> Backward Seek the Stream to The Given Duration.
 """
 
 HELP_14 = """
