@@ -36,7 +36,7 @@ from AvengerMusic.utils.inline.settings import (
     vote_mode_markup,
 )
 from AvengerMusic.utils.inline.start import private_panel
-from config import BANNED_USERS, OWNER_ID, START_IMG_URL
+from config import BANNED_USERS, OWNER_ID, START_PHOTO
 
 
 @app.on_message(
@@ -97,7 +97,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         buttons = private_panel(_)
         return await CallbackQuery.edit_message_media(
             InputMediaPhoto(
-                media=START_IMG_URL,
+                media=START_PHOTO,
                 caption=_["start_2"].format(
                     CallbackQuery.from_user.mention, app.mention),
             ),
