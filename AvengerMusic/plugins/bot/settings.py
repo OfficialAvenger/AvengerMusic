@@ -66,6 +66,21 @@ async def settings_cb(client, CallbackQuery, _):
         reply_markup=InlineKeyboardMarkup(buttons),
     )
 
+@app.on_callback_query(filters.regex("gib_source") & ~BANNED_USERS)
+@languageCB
+async def gib_repo(client, CallbackQuery, _):
+    await CallbackQuery.edit_message_media(
+        InputMediaVideo("https://telegra.ph/file/6c30c3352d6d6a09f735e.mp4"),
+        reply_markup=InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton(text="ʜᴏᴍᴇ", callback_data=f"settingsback_helper"),
+                    InlineKeyboardButton(text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"https://t.me/Red_Wine_Op")
+                ]
+            ]
+        ),
+    )
+
 
 @app.on_callback_query(filters.regex("settingsback_helper") & ~BANNED_USERS)
 @languageCB
