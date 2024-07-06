@@ -94,8 +94,12 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         await app.resolve_peer(OWNER_ID)
         OWNER = OWNER_ID
         buttons = private_panel(_)
-        return await CallbackQuery.edit_message_text(
-            _["start_2"].format(CallbackQuery.from_user.mention, app.mention),
+        return await CallbackQuery.edit_message_media(
+            InputMediaPhoto(
+                media=START_IMG_URL,
+                caption=_["start_2"].format(
+                    CallbackQuery.from_user.mention, app.mention),
+            ),
             reply_markup=InlineKeyboardMarkup(buttons),
         )
     else:
@@ -103,6 +107,7 @@ async def settings_back_markup(client, CallbackQuery: CallbackQuery, _):
         return await CallbackQuery.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(buttons)
         )
+
 
 
 @app.on_callback_query(
