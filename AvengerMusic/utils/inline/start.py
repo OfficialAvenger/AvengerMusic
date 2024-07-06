@@ -35,7 +35,10 @@ def private_panel(_):
         ],
         [
             InlineKeyboardButton(text=_["S_B_5"], user_id=config.OWNER_ID),
-            InlineKeyboardButton(text="Premium", callback_data="alert_message"),
+            InlineKeyboardButton(text="𝖯𝗋𝖾𝗆𝗂𝗎𝗆", callback_data="alert_message"),
+        ],
+        [
+            InlineKeyboardButton(text="🧑‍💻 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗈𝖽𝖾 🧑‍💻", callback_data="gib_source"),
         ],
     ]
     return buttons
