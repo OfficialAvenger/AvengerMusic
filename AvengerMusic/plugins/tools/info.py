@@ -2,7 +2,8 @@ import os
 from pyrogram import filters, enums, Client
 from pyrogram.types import Message
 from pyrogram.enums import ParseMode
-from AvengerMusic import app, BANNED_USERS
+from AvengerMusic import app
+from config import BANNED_USERS
 
 @app.on_message(filters.command("id"), group=10)
 async def uid(client, message):
