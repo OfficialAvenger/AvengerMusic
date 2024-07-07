@@ -36,8 +36,9 @@ from AvengerMusic.utils.inline.settings import (
     vote_mode_markup,
 )
 from AvengerMusic.utils.inline.start import private_panel
-from config import BANNED_USERS, OWNER_ID, START_PHOTO
+from config import BANNED_USERS, OWNER_ID
 
+START_PHOTO = "https://te.legra.ph/file/7757731c3e8b784b6a550.png"
 
 @app.on_message(
     filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
