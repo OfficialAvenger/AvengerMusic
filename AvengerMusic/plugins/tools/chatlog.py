@@ -28,12 +28,12 @@ async def join_watcher(_, message):
             count = await app.get_chat_members_count(chat.id)
             msg = (
                 f"<b><u>#𝖭𝖤𝖶_𝖦𝖱𝖮𝖴𝖯</u></b>\n\n"
-                f"**𝖢𝗁𝖺𝗍 𝖭𝖺𝗆𝖾 :** {chat.title}\n"
-                f"**𝖢𝗁𝖺𝗍 𝖨𝖽 :** {chat.id}\n"
-                f"**𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 :** @{chat.username}\n"
-                f"**𝖫𝗂𝗇𝗄 :** [𝖢𝗅𝗂𝖼𝗄]({link})\n"
-                f"**𝖬𝖾𝗆𝖻𝖾𝗋𝗌 :** {count}\n"
-                f"**𝖠𝖽𝖽𝖾𝖽 𝖡𝗒** {message.from_user.mention}"
+                f"𝖢𝗁𝖺𝗍 𝖭𝖺𝗆𝖾 : {chat.title}\n"
+                f"𝖢𝗁𝖺𝗍 𝖨𝖽 : {chat.id}\n"
+                f"𝖴𝗌𝖾𝗋𝗇𝖺𝗆𝖾 : @{chat.username}\n"
+                f"𝖫𝗂𝗇𝗄 : [𝖢𝗅𝗂𝖼𝗄]({link})\n"
+                f"𝖬𝖾𝗆𝖻𝖾𝗋𝗌 : {count}\n"
+                f"𝖠𝖽𝖽𝖾𝖽 𝖡𝗒 {message.from_user.mention}"
             )
             await app.send_message(LOG_GROUP_ID, text=msg, reply_markup=InlineKeyboardMarkup([
                 [InlineKeyboardButton(f"𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"{sangram}")]
@@ -47,5 +47,5 @@ async def on_left_chat_member(_, message: Message):
         username = f"@{message.chat.username}" if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
         chat_id = message.chat.id
         left = f"<b><u>#𝖫𝖤𝖥𝖳_𝖦𝖱𝖮𝖴𝖯</u></b>\n\n𝖢𝗁𝖺𝗍 𝖳𝗂𝗍𝗅𝖾 : {title}\n\n𝖢𝗁𝖺𝗍 𝖨𝖽 : {chat_id}\n\n𝖱𝖾𝗆𝗈𝗏𝖾𝖽 𝖡𝗒 : {remove_by}\n\n𝐁ᴏᴛ : @{app.username}"
-        await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=left)
+        await app.send_message(LOG_GROUP_ID, text=left)
         
