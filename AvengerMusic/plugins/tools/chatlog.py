@@ -36,7 +36,7 @@ async def join_watcher(_, message):
                 f"**𝖠𝖽𝖽𝖾𝖽 𝖡𝗒** {message.from_user.mention}"
             )
             await app.send_message(LOG_GROUP_ID, text=msg, reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(f"𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"{link}")]
+                [InlineKeyboardButton(f"𝖲𝗎𝗉𝗉𝗈𝗋𝗍", url=f"{sangram}")]
             ]))
 
 @app.on_message(filters.left_chat_member)
@@ -46,6 +46,6 @@ async def on_left_chat_member(_, message: Message):
         title = message.chat.title
         username = f"@{message.chat.username}" if message.chat.username else "𝐏ʀɪᴠᴀᴛᴇ 𝐂ʜᴀᴛ"
         chat_id = message.chat.id
-        left = f"<b><u>#𝖫𝖤𝖥𝖳_𝖦𝖱𝖮𝖴𝖯</u></b> ✫\n\n𝐂ʜᴀᴛ 𝐓ɪᴛʟᴇ : {title}\n\n𝐂ʜᴀᴛ 𝐈ᴅ : {chat_id}\n\n𝐑ᴇᴍᴏᴠᴇᴅ 𝐁ʏ : {remove_by}\n\n𝐁ᴏᴛ : @{app.username}"
+        left = f"<b><u>#𝖫𝖤𝖥𝖳_𝖦𝖱𝖮𝖴𝖯</u></b>\n\n𝖢𝗁𝖺𝗍 𝖳𝗂𝗍𝗅𝖾 : {title}\n\n𝖢𝗁𝖺𝗍 𝖨𝖽 : {chat_id}\n\n𝖱𝖾𝗆𝗈𝗏𝖾𝖽 𝖡𝗒 : {remove_by}\n\n𝐁ᴏᴛ : @{app.username}"
         await app.send_photo(LOG_GROUP_ID, photo=random.choice(photo), caption=left)
         
