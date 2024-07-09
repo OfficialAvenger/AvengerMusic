@@ -149,3 +149,13 @@ You can Control the PlayBack Speed of the Ongoing Stream. [Admins Only]
 <b>/speed or /playback :</b> For Adjusting the Audio PlayBack Speed in Group.
 <b>/cspeed or /cplayback :</b> For Adjusting the Audio Playback Speed in Channel.
 """
+
+HELP_16 = """
+<b><u>EXTRA COMMANDS:</b></u>
+
+<b>/id</b> : To get user id.
+<b>/gifid Reply to a GIF :</b> To get Gif Id.
+<b>/stickerid Reply to a Sticker :</b> To get Sticker Id.
+<b>/info :</b> To get User Information.
+<b>/chatinfo :</b> To get Chat information.
+"""
