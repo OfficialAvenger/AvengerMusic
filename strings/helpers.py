@@ -151,7 +151,7 @@ You can Control the PlayBack Speed of the Ongoing Stream. [Admins Only]
 """
 
 HELP_16 = """
-<b><u>EXTRA COMMANDS:</b></u>
+<b><u>INFO COMMANDS:</b></u>
 
 <b>/id</b> : To get user id.
 <b>/gifid Reply to a GIF :</b> To get Gif Id.
