@@ -38,7 +38,7 @@ from AvengerMusic.utils.inline.settings import (
 from AvengerMusic.utils.inline.start import private_panel
 from config import BANNED_USERS, OWNER_ID
 
-START_PHOTO = "https://te.legra.ph/file/7757731c3e8b784b6a550.png"
+START_PHOTO = "https://graph.org//file/1ee8d6f624545750b61b9.jpg"
 
 @app.on_message(
     filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
