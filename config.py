@@ -19,6 +19,8 @@ MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 20000))
 
+SONG_DOWNLOAD_DURATION = int(getenv("SONG_DOWNLOAD_DURATION_LIMIT", "180"))
+
 # Chat id of a group for logging bot's activities
 LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", None))
 
@@ -128,6 +130,9 @@ def time_to_seconds(time):
 
 
 DURATION_LIMIT = int(time_to_seconds(f"{DURATION_LIMIT_MIN}:00"))
+SONG_DOWNLOAD_DURATION_LIMIT = int(
+    time_to_seconds(f"{SONG_DOWNLOAD_DURATION}:00")
+)
 
 
 if SUPPORT_CHANNEL:
