@@ -5,7 +5,7 @@ from pyrogram.enums import ParseMode
 from AvengerMusic import app
 from config import BANNED_USERS
 
-@app.on_message(filters.command("id"))
+@app.on_message(filters.command("id"), group=10)
 async def uid(client, message):
     chat = message.chat
     your_id = message.from_user.id
@@ -17,16 +17,16 @@ async def uid(client, message):
         text = f"𝖸𝗈𝗎𝗋 𝖨𝖣 𝗂𝗌 <code>{your_id}</code>\n\n"
     else:
         chat_id = message.chat.id
-        text = f"𝖳𝗁𝗂𝗌 𝖢𝗁𝖺𝗍 𝖨𝖣 <code>{chat_id}</code>\n"
+        text = f"𝖳𝗁𝗂𝗌 𝖢𝗁𝖺𝗍 𝖨𝖣 : <code>{chat_id}</code>\n"
 
         # Check if the command is a reply
         if reply:
             if reply.from_user:
-                text += f"Replied User ID: <code>{reply.from_user.id}</code>\n"
+                text += f"𝖱𝖾𝗉𝗅𝗂𝖾𝖽 𝖴𝗌𝖾𝗋 𝖨𝖣 : <code>{reply.from_user.id}</code>\n"
             elif reply.forward_from_chat:
-                text += f"The Forwarded Channel, {reply.forward_from_chat.title}, Has an ID of: <code>{reply.forward_from_chat.id}</code>\n"
+                text += f"𝖳𝗁𝖾 𝖥𝗈𝗋𝗐𝖺𝗋𝖽𝖾𝖽 𝖢𝗁𝖺𝗇𝗇𝖾𝗅, {reply.forward_from_chat.title}, Has an ID of: <code>{reply.forward_from_chat.id}</code>\n"
             elif reply.sender_chat:
-                text += f"The ID of Replied Chat/Channel: <code>{reply.sender_chat.id}</code>\n"
+                text += f"𝖳𝗁𝖾 𝖨𝖣 𝗈𝖿 𝖱𝖾𝗉𝗅𝗂𝖾𝖽 𝖢𝗁𝖺𝗍/𝖢𝗁𝖺𝗇𝗇𝖾𝗅: <code>{reply.sender_chat.id}</code>\n"
 
     # Check if command has additional arguments
     if len(message.command) == 2:
@@ -35,16 +35,16 @@ async def uid(client, message):
             user = await client.get_users(split)
             user_id = user.id
             user_mention = user.mention 
-            text += f"User {user_mention}'s ID is <code>{user_id}</code>\n"
+            text += f"𝖴𝗌𝖾𝗋 {user_mention}'𝗌 𝖨𝖣 𝗂𝗌 <code>{user_id}</code>\n"
 
         except Exception:
-            return await message.reply_text("No User Found")
+            return await message.reply_text("𝖴𝗌𝖾𝗋 𝖭𝗈𝗍 𝖥𝗈𝗎𝗇𝖽")
 
     await message.reply_text(text, parse_mode="html")
     
 
 
-@app.on_message(filters.command("id"), group=10)
+@app.on_message(filters.command("idddtfg"), group=10)
 async def uid(client, message):
     chat = message.chat
     your_id = message.from_user.id
