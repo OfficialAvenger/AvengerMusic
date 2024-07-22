@@ -40,7 +40,7 @@ async def uid(client, message):
         except Exception:
             return await message.reply_text("𝖴𝗌𝖾𝗋 𝖭𝗈𝗍 𝖥𝗈𝗎𝗇𝖽")
 
-    await message.reply_text(text, parse_mode="HTML")
+    await message.reply_text(text, parse_mode=enums.ParseMode.HTML)
     
 
 
@@ -80,7 +80,7 @@ async def uid(client, message):
     await message.reply(text)
 
 
-@app.on_message(filters.command("id") & filters.group)
+@app.on_message(filters.command("iggfd") & filters.group)
 async def uid(client, message):
     chat_id = message.chat.id
 
@@ -92,7 +92,7 @@ async def uid(client, message):
     else:
         text = f"Chat ID: <code>{chat_id}</code>\n"
 
-    await message.reply_text(text, parse_mode="html")
+    await message.reply_text(text, parse_mode=enums.ParseMode.HTML)
 
 
 
