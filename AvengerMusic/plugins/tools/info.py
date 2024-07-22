@@ -10,7 +10,7 @@ async def uid(client, message):
     chat = message.chat
     your_id = message.from_user.id
     mention_user = message.from_user.mention
-    message_id = message.message.id
+    message_id = message.id
     reply = message.reply_to_message
 
     if message.chat.type == "private":
