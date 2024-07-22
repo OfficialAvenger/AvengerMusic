@@ -40,7 +40,7 @@ async def uid(client, message):
         except Exception:
             return await message.reply_text("𝖴𝗌𝖾𝗋 𝖭𝗈𝗍 𝖥𝗈𝗎𝗇𝖽")
 
-    await message.reply_text(text, parse_mode="html")
+    await message.reply_text(text, parse_mode="HTML")
     
 
 
