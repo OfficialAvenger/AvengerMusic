@@ -44,28 +44,28 @@ async def inline_query_handler(client, query):
                 ]
             )
             searched_text = f"""
-❄ <b>Title :</b> <a href={link}>{title}</a>
+#❄ <b>Title :</b> <a href={link}>{title}</a>
 
-⏳ <b>Duration :</b> {duration} Minutes
-👀 <b>Views :</b> <code>{views}</code>
-🎥 <b>Channel :</b> <a href={channellink}>{channel}</a>
-⏰ <b>Published on :</b> {published}
+#⏳ <b>Duration :</b> {duration} Minutes
+#👀 <b>Views :</b> <code>{views}</code>
+#🎥 <b>Channel :</b> <a href={channellink}>{channel}</a>
+#⏰ <b>Published on :</b> {published}
 
 
-<u><b>➻ Inline Search mode by {app.name}</b></u>"""
-            answers.append(
-                InlineQueryResultPhoto(
-                    photo_url=thumbnail,
-                    title=title,
-                    thumb_url=thumbnail,
-                    description=description,
-                    caption=searched_text,
-                    reply_markup=buttons,
-                )
-            )
-        try:
-            return await client.answer_inline_query(query.id, results=answers)
-        except:
-            return
+#<u><b>➻ Inline Search mode by {app.name}</b></u>"""
+ #           answers.append(
+  #              InlineQueryResultPhoto(
+   #                 photo_url=thumbnail,
+    #                title=title,
+    #                thumb_url=thumbnail,
+           #         description=description,
+    #                caption=searched_text,
+      #              reply_markup=buttons,
+     #           )
+     #       )
+     #   try:
+        #    return await client.answer_inline_query(query.id, results=answers)
+     #   except:
+        #    return
 
 """
