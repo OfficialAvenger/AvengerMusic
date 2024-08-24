@@ -5,10 +5,12 @@ RUN apt-get update \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
+RUN node -v \
+    && npm -v
+    
 COPY . /app/
 WORKDIR /app/
 RUN pip3 install --no-cache-dir -U -r requirements.txt
 RUN pip install --upgrade pip
-RUN node:22-alpine node -v
 
 CMD bash start
