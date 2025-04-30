@@ -40,9 +40,6 @@ def private_panel(_):
         [
             InlineKeyboardButton(text="🧑‍💻 𝖲𝗈𝗎𝗋𝖼𝖾 𝖢𝗈𝖽𝖾 🧑‍💻", callback_data="gib_source"),
         ],
-        [   
-            InlineKeyboardButton(text="𝖤𝖺𝗋𝗇 𝖬𝗈𝗇𝖾𝗒 🤑", url=f"https://t.me/findoluckybot/app?startapp=NTIzMTgwMTEyNl82NjY1ODcwNzAw"),
-        ],
     ]
     return buttons
 
