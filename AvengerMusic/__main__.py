@@ -12,22 +12,6 @@ from AvengerMusic.plugins import ALL_MODULES
 from AvengerMusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
-import threading
-from http.server import BaseHTTPRequestHandler, HTTPServer
-
-class DummyHandler(BaseHTTPRequestHandler):
-    def do_GET(self):
-        self.send_response(200)
-        self.end_headers()
-        self.wfile.write(b"OK")
-
-def run_dummy_server():
-    server = HTTPServer(("0.0.0.0", 8000), DummyHandler)
-    server.serve_forever()
-
-# Start dummy server in background thread
-threading.Thread(target=run_dummy_server, daemon=True).start()
-
 
 async def init():
     if (
